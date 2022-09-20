@@ -1,5 +1,5 @@
 .hero {
-  padding: 34px 16px 65px 16px;
+  padding: 34px 0 65px 0;
   text-align: center;
   background-image: url(../../images/image-mob.png);
   background-repeat: no-repeat;
@@ -8,7 +8,14 @@
 
 @media screen and (min-width: 768px) {
   .hero {
+    padding: 89px 0 88px 0;
     background-image: url(../../images/image-tab.png);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    background-image: url(../../images/image-desk.png);
   }
 }
 
@@ -20,6 +27,18 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 704px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 904px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .container {
+    width: 1170 px;
   }
 }
 

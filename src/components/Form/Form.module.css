@@ -2,13 +2,9 @@
   display: flex;
   flex-direction: column;
   max-width: 380px;
+  margin-bottom: 104px;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media screen and (min_width: 768px) {
-  .form {
-  }
 }
 
 .title {
@@ -20,6 +16,12 @@
   color: rgba(0, 0, 0, 0.87);
 }
 
+@media screen and (min-width: 768px) {
+  .title {
+    width: 704px;
+  }
+}
+
 .working__form {
   padding-top: 140px;
   text-align: center;
@@ -29,7 +31,7 @@
   width: 328px;
   height: 54px;
   margin-top: 50px;
-  padding: 0px 16px;
+  padding-left: 16px;
 
   font-size: 16px;
   line-height: 1.62;
@@ -40,7 +42,7 @@
 
 @media screen and (min-width: 768px) {
   .input {
-    width: 380px;
+    width: 364px;
   }
 }
 
@@ -60,14 +62,23 @@
 
 .select__title {
   margin: 0 0 11px 0;
+  font-weight: 400;
+  line-height: 1;
 }
 
 .radio {
+  margin-right: 12px;
+}
+
+.label {
+  display: flex;
   margin-bottom: 7px;
+  font-size: 16px;
+  line-height: 1.62;
 }
 
 button.upload {
-  width: 63px;
+  width: 83px;
   height: 54px;
 
   border: 1px solid rgba(0, 0, 0, 0.87);
@@ -75,15 +86,27 @@ button.upload {
   background-color: transparent;
 }
 
+button.upload:hover {
+  background-color: transparent;
+}
+
 .input__upload {
-  width: 294px;
-  height: 54px;
+  width: 274px;
+  height: 50px;
   border-radius: 0px 4px 4px 0px;
   background-color: transparent;
   border: 1px solid #d0cfcf;
+  border-left: none;
+  outline: none;
 }
 
-#file-upload-button {
+@media screen and (min-width: 768px) {
+  .input__upload {
+    width: 294px;
+  }
+}
+
+input#file-upload-button {
   height: 54px;
 }
 

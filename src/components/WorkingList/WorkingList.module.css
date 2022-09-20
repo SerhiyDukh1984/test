@@ -1,7 +1,20 @@
-.list {
-  list-style: none;
+.work__list {
+  padding-top: 140px;
+  text-align: center;
 }
 
-.work__list {
-  text-align: center;
+.title {
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    width: 704px;
+  }
 }

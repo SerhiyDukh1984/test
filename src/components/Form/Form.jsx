@@ -31,37 +31,38 @@ export const Form = () => {
         </label>
         <p className={s.text}>+38 (XXX) XXX - XX - XX</p>
         <div className={s.select}>
-          <h3 className={s.select__title}>Select your position</h3>
-          <label>
-            <input className={s.radio} type="radio" />
+          <h2 className={s.select__title}>Select your position</h2>
+          <label className={s.label}>
+            <input className={s.radio} name="name" type="radio" />
             Frontend developer
           </label>
-          <label>
-            <input className={s.radio} type="radio" />
+          <label className={s.label}>
+            <input className={s.radio} name="name" type="radio" />
             Backend developer
           </label>
-          <label>
-            <input className={s.radio} type="radio" />
+          <label className={s.label}>
+            <input className={s.radio} name="name" type="radio" />
             Designer
           </label>
-          <label>
-            <input className={s.radio} type="radio" />
+          <label className={s.label}>
+            <input className={s.radio} name="name" type="radio" />
             QA
           </label>
         </div>
 
-        <form className={s.upload__form}>
-          <button className={s.upload} type="bsubmit">
+        <div className={s.upload__form}>
+          <button className={s.upload} type="submit">
             Upload
           </button>
           <label>
             <input
               className={s.input__upload}
-              type="file"
+              type="formaction"
+              name="image"
               placeholder="Upload your photo"
             />
           </label>
-        </form>
+        </div>
         <button className={s.submit} type="submit">
           Sign up
         </button>
