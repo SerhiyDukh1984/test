@@ -54,13 +54,14 @@ export const Form = () => {
           <button className={s.upload} type="submit">
             Upload
           </button>
-          <label>
+          <label className={s.upload__label}>
             <input
               className={s.input__upload}
-              type="formaction"
+              type="file"
               name="image"
               placeholder="Upload your photo"
             />
+            <p className={s.upload__text}>Upload your photo</p>
           </label>
         </div>
         <button className={s.submit} type="submit">
