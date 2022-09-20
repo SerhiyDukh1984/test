@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.logo {
+  width: 104px;
+  height: 26px;
+  background-image: url(../../images/Logo.svg);
+  background-repeat: no-repeat;
+}
+
+.button:first-child {
+  margin-right: 10px;
+}

@@ -1,0 +1,49 @@
+.hero {
+  padding: 34px 16px 65px 16px;
+  text-align: center;
+  background-image: url(../../images/image-mob.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../../images/image-tab.png);
+  }
+}
+
+.container {
+  width: 328px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 704px;
+  }
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 21px;
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .title,
+  .hero .text {
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 32px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.62;
+}
