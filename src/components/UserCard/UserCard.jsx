@@ -17,6 +17,7 @@ export const UserCard = () => {
       setPage(page + 1);
       setTotalUsers(response.total_users);
     });
+    // eslint-disable-next-line
   }, []);
 
   const sortUsers = users.sort(function (a, b) {
@@ -37,7 +38,7 @@ export const UserCard = () => {
         {users !== [] &&
           sortUsers.map(user => (
             <li key={user.id} className={s.item}>
-              <img src={user.photo} className={s.image} />
+              <img src={user.photo} alt="user foto" className={s.image} />
               <h3 className={s.title}>{user.name}</h3>
               <p className={s.text}>{user.position}</p>
               <p className={s.text}>{user.email}</p>
