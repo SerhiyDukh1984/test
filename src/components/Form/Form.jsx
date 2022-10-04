@@ -1,5 +1,4 @@
 import { addUser } from 'components/Api/Api';
-import { useEffect } from 'react';
 import { useState } from 'react';
 import s from './Form.module.css';
 
@@ -10,8 +9,8 @@ export const Form = () => {
   const [photo, setPhoto] = useState('');
   console.log('🚀 ~ photo', photo);
 
-  let inputFile = document.getElementById('file-input');
-  let fileNameField = document.getElementById('file-name');
+  // let inputFile = document.getElementById('file-input');
+  // let fileNameField = document.getElementById('file-name');
 
   const handleChange = e => {
     const { name, value } = e.target;
